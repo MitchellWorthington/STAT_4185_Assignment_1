@@ -41,13 +41,3 @@ encrypted_message = encrypted_file.readline()
 encrypted_file.close()
 
 # Write code below
-cipher = {value:key for key, value in cipher.items()}
-x = " ".join(encrypted_message)
-l = x.split(' ')
-output_l = []
-
-for i in range(len(l)):
-    output_l.append(cipher.get(l[i]))
-
-output_s = ''.join(output_l)
-print(output_s)
